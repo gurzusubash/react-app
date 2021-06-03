@@ -14,7 +14,7 @@ class App extends Component {
   componentDidMount() {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
-      .then(user=> this.setState({monsters: user}));
+      .then((user) => this.setState({ monsters: user }));
   }
 
   render() {
